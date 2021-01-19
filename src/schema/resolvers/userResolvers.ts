@@ -19,7 +19,6 @@ const resolvers = {
     register,
     login,
     deleteUser,
-    shredData,
     renameUser,
   },
 };
