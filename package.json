@@ -25,7 +25,7 @@
     "typeorm": "^0.2.8"
   },
   "scripts": {
-    "start": "NODE_ENV=development nodemon --exec ts-node src/index.ts",
+    "start": "NODE_ENV=development&& nodemon --exec ts-node src/index.ts",
     "build": "tsc -b"
   },
   "jest": {
