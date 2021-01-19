@@ -1,25 +1,17 @@
 <a href="#"><img src=https://github.com/vineeshvk/chat-app-flutter/blob/master/assets/icon/logo.png width=80></a>
 
-# Chap Server
+# GovApp Server
 
-It's is an Apollo Graphql Server created using typescript which uses postgres as it's database. and is deployed in heroku using docker container.
-
-https://chapserver.herokuapp.com
+It's an Apollo Graphql Server created using typescript which uses postgres as it's database. and is deployed in google cloud platform using docker container.
 
 ## Client
 
-### Flutter app
-
-Checkout the flutter client [Chat app flutter](https://github.com/vineeshvk/chat-app-flutter)
-
+### Flutter application
 
 ## Features
 
 - signup and signin
-- create individual and group chats and delete them
-- view and add messages
 - notification
-- instant messages(subscriptions using websocket)
 
 ## Tools used
 
@@ -28,7 +20,7 @@ Checkout the flutter client [Chat app flutter](https://github.com/vineeshvk/chat
 - [Apollo Server(Graphql)](https://www.apollographql.com/docs/apollo-server/)
 - [Postgres](https://www.npmjs.com/package/pg)
 - [Docker](https://www.docker.com/)
-- [Heroku](https://www.heroku.com/)
+- [GCP](https://www.console.google.com/)
 - [Firebase Cloud Messaging](https://firebase.google.com)
 
 

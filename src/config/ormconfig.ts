@@ -7,16 +7,16 @@ const docker = {
   host: 'postgres',
   port: 5432,
   username: 'postgres',
-  password: '12345',
-  database: 'chapDB',
+  password: 'postgres',
+  database: 'govApp',
 };
 
 const dev = {
   host: 'localhost',
   port: 5432,
-  username: 'vineesh',
-  password: '1234',
-  database: 'chapDB',
+  username: 'postgres',
+  password: 'postgres',
+  database: 'govApp',
 };
 
 const deploy = {
@@ -24,7 +24,7 @@ const deploy = {
   extra: { ssl: true },
 };
 
-const config = process.env.DATABASE_URL ? deploy : docker;
+const config = dev;
 
 export const dbconfig: ConnectionOptions = {
   ...config,

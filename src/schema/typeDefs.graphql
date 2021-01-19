@@ -1,7 +1,4 @@
 type Query {
-  hello(name: String): String
-  getChats: [Chat]
-  getMessages(chatId: String!): ChatRes
   getUsers: UserRes
   me: User
 }
@@ -18,12 +15,7 @@ type Mutation {
   createMessage(chatId: String!, text: String!): Error!
   deleteChat(chatId: String): Response
   deleteUser: String
-  shredData(secret: String): String
   renameUser(name: String): Response
-}
-
-type Subscription {
-  getNewMessages(chatId: String): Message
 }
 
 type UserRes {
@@ -40,26 +32,6 @@ type Response {
   error: Error
   token: String
   id: String
-}
-
-type ChatRes {
-  error: Error
-  chat: Chat
-}
-
-type Chat {
-  id: String
-  members: [User]
-  messages: [Message]
-  name: String
-  lastMessage: String
-}
-
-type Message {
-  id: String
-  text: String
-  sender: User
-  me: Boolean
 }
 
 type User {
