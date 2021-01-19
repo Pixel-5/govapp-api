@@ -8,8 +8,6 @@ import {
   NO_USER,
   UN_AUTHROIZED,
 } from '../../config/errorMessages';
-import Chat from '../../entity/Chat';
-import Message from '../../entity/Message';
 import User from '../../entity/User';
 
 const resolvers = {
@@ -89,9 +87,7 @@ async function deleteUser(_, {}, { user }: contextType) {
 
 async function shredData(_, { secret }) {
   if (secret === process.env.KILL_SWITCH && secret) {
-    await Chat.clear();
     await User.clear();
-    await Message.clear();
   }
 }
 
