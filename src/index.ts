@@ -2,4 +2,4 @@ import { startServer } from './tools/startServer';
 import dotenv = require('dotenv');
 dotenv.config();
 
-startServer(5000);
+startServer(5500);
