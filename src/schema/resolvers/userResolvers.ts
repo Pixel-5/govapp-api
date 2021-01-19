@@ -12,7 +12,6 @@ import User from '../../entity/User';
 
 const resolvers = {
   Query: {
-    hello: _ => 'hello',
     getUsers,
     me,
   },
