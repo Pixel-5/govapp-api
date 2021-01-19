@@ -29,7 +29,7 @@ export const dbconfig: ConnectionOptions = {
   type: 'postgres',
   synchronize: true,
   logging: false,
-  entities: [Chat, User, Message],
+  entities: [User],
   dropSchema: false,
   migrations: ['src/migration/**/*.ts'],
   subscribers: ['src/subscriber/**/*.ts'],
