@@ -1,5 +1,3 @@
-<a href="#"><img src=https://github.com/vineeshvk/chat-app-flutter/blob/master/assets/icon/logo.png width=80></a>
-
 # GovApp Server
 
 It's an Apollo Graphql Server created using typescript which uses postgres as it's database. and is deployed in google cloud platform using docker container.
