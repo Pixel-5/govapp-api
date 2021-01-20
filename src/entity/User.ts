@@ -13,6 +13,21 @@ export default class User extends BaseEntity {
   @Column({ nullable: true })
   name: String;
 
+  @Column({ nullable: true })
+  surname: String;
+
+  @Column({ nullable: true })
+  physical_address: String;
+
+  @Column({ nullable: true })
+  postal_address: String;
+
+  @Column({ nullable: true })
+  passport: String;
+
+  @Column({ nullable: true })
+  omang: String;
+
   @Column({ unique: true })
   email: string;
 

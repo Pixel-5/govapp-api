@@ -42,7 +42,7 @@ async function getUsers(_, {}, { user }: contextType) {
 //Mutation
 /* --------------------REGISTER-------------------------- */
 
-async function register(_, { email, password, name, fcmToken }) {
+async function register(_, { email, password, name, surname, physical_address,postal_address,omang, passport, fcmToken }) {
   const userName = await User.findOne({ name });
   if (userName) return returnError('name', DUPLICATE_USER('name'));
 
@@ -55,6 +55,11 @@ async function register(_, { email, password, name, fcmToken }) {
     password: hashedPassword,
     name,
     fcmToken,
+    surname,
+    physical_address,
+    postal_address,
+    passport,
+    omang
   }).save();
   const token = sign({ id: user.id }, process.env.JWT_SECRET_TOKEN);
 

@@ -4,6 +4,11 @@ import { createConnection } from 'typeorm';
 import { dbconfig } from '../config/ormconfig';
 import User from '../entity/User';
 import schema from './../schema';
+const FCM = require('fcm-node');
+
+const serverKey = require('../config/govapp-35c63-firebase-adminsdk-iefcn-b10f9d91ef.json')
+
+export const fcm = new FCM(serverKey)
 
 export async function startServer(port: number) {
   const server = new ApolloServer({
